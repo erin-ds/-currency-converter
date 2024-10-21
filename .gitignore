@@ -30,3 +30,9 @@ build/
 
 ### VS Code ###
 .vscode/
+/out/production/currency-converter/application.yml
+/out/production/currency-converter/db/changelog_init.xml
+/out/production/currency-converter/db/changelog/create-currency-table.xml
+/out/production/currency-converter/db/changelog/create-sequence.xml
+/out/production/currency-converter/db/changelog/insert-currency.xml
+/.jpb/jpb-settings.xml
