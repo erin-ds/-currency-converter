@@ -21,3 +21,7 @@ spring:
         hbm2ddl:
           auto: none
 
+currency-file:
+  url: "https://www.cbr-xml-daily.ru/daily_utf8.xml"
+  path: "src/main/resources/download/"
+  filename: "currencies.xml"

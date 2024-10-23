@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import ru.skillbox.currency.exchange.dto.CurrencyDto;
 import ru.skillbox.currency.exchange.service.CurrencyService;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("api/currency")
@@ -25,5 +27,10 @@ public class CurrencyController {
     @PostMapping("/create")
     ResponseEntity<CurrencyDto> create(@RequestBody CurrencyDto dto) {
         return ResponseEntity.ok(service.create(dto));
+    }
+
+    @GetMapping
+    ResponseEntity<List<CurrencyDto>> getAllCurrencies() {
+        return ResponseEntity.ok(service.getAllCurrencies());
     }
 }
